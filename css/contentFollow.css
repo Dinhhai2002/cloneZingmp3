@@ -1,0 +1,188 @@
+#wp-content{
+    /* margin-bottom: 3340px; */
+}
+#content{
+    /* margin-left: 240px; */
+    /* background-image:url(../img/theme1.svg); */
+    /* margin-top: 50px; */
+    padding-top:10px;
+    will-change: scroll-position;
+    height:100%;
+    overflow-anchor: none !important;
+    scroll-snap-stop: normal !important;
+    scroll-behavior: unset !important;
+    overscroll-behavior: unset !important;
+}
+
+
+.content-nav{
+    width: 450px;
+    height:32px;
+    padding:0;
+    margin:0 auto;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    list-style: none;
+    background-color: #ffffff1a;
+    border-radius: 100px;
+    margin-top: 40px;
+    text-transform: Uppercase;
+    
+}
+.content-nav li{
+    font-size: 14px;
+    color: var(--primary-color);
+    padding:2px 16px;
+    cursor: pointer;
+}
+.content-nav li:nth-child(1){
+    background-color: #826399;
+    border-radius:100px;
+}
+
+
+/* play-list-5-circle */
+.content-playList{
+    margin:20px 46px;
+}
+.content-playList-List-5-circle{
+    --columns: 5;
+    --spacing: 12px;                            
+    display: flex;                           
+    flex-flow: row wrap;                           
+    margin-left: var(-1 * var(--spacing));                            
+    margin-bottom: var(-1 * var(--spacing));
+}
+.content-playList-item-circle{
+    width: calc(100% / var(--columns) - var(--spacing));
+    margin-left: var(--spacing);
+    margin-bottom: var(--spacing);
+}
+.content-playList-item-circle img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.content-playList-item-circle img:hover{
+    transform: perspective(1px) translateZ(0);
+}
+
+
+/* content-playList-artist */
+.content-playList-artist{
+    height: 100%;
+    margin:20px 46px;
+    display:flex;
+    /* margin-bottom: 2000px; */
+}
+.content-playList-status{
+    width: 100%;
+    margin: 4px 8px;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+}
+.status-artist{
+    background-color:var(--nav-background-color);
+    margin:8px 0;
+    padding:24px 24px 12px 24px;
+    max-width: 561px;
+}
+.status-artist-header{
+    display: flex;
+    font-size: 14px;
+}
+.status-artist-header img{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    object-fit: cover;
+}
+.status-artist-header-content{
+    display:flex;
+    flex-direction: column;
+    margin-left: 8px;
+    font-size: 14px;
+    color:var(--primary-color);
+}
+.status-artist-header-content-name{
+    display: flex;
+   
+}
+.status-artist-header-content-name>p{
+    cursor: pointer;
+    white-space:nowrap;
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.status-artist-header-content-name>p:hover{
+    color:var(--pink-color);
+}
+.follow{
+    margin-left: 4px;
+    color:var(--pink-color);
+    font-size: 14px;
+    font-weight: 600;
+}
+.follow:hover{
+    opacity: 0.7;
+}
+.status-artist-header-content-time{
+    color:var(--text-opacity-color);
+}
+.status-artist-content{
+
+}
+.status-artist-content-nameStatus{
+    font-size: 16px;
+    color:var(--primary-color);
+    padding:8px 0;
+}
+.status-artist-content-nameStatus img{
+    width:530px;
+    height:300px;
+}
+.status-artist-footer{
+    display: flex;
+    margin-top: 16px;
+}
+.status-artist-footer-like{
+    display: flex;
+    margin-right: 16px;
+    font-size: 18px;
+    color:var(--primary-color);
+
+}
+.status-artist-footer-like a{
+    font-size: 18px;
+    color:var(--primary-color);
+    padding:4px 4px;
+    line-height:18px;
+}
+.status-artist-footer-comment{
+    display: flex;
+    margin:0 4px;
+    font-size: 18px;
+    color:var(--primary-color);
+    padding-left: 4px;
+}
+.status-artist-footer-comment a{
+    font-size: 18px;
+    color:var(--primary-color);
+    padding:4px 4px;
+
+}
+.heart-hide-follow{
+    display:none;
+}
+.heart-hide-follow.is-active{
+    display:block;
+}
+.heart-hide-follow.is-active + .heart-show-follow{
+    display:none;
+}
+.heart-hide-follow ion-icon{
+    color: #ce267a;
+ }
