@@ -131,7 +131,7 @@
         position :fixed;
         left: 0;
         right: 0;
-        bottom: 0 !important;
+        bottom: -2px !important;
         width: 100%;
         max-height: 100px;
         z-index: 10;
@@ -145,7 +145,7 @@
          position :fixed;
         left: 0;
         right: 0;
-        bottom: 0 !important;
+        bottom: -2px !important;
         width: 100%;
         max-height: 100px;
         z-index: 10;
