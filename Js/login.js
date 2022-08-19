@@ -32,7 +32,6 @@ btnLogin.addEventListener('click',function(e){
 var nameUser=document.querySelector('.Js-nameUser');
 document.getElementById('form-signup').addEventListener('click',function signup(e){
     e.stopPropagation();
-    e.preventDefault();
     var username=document.getElementById("username-signup").value;
     var password=document.getElementById("password-signup").value;
     var user={

@@ -213,7 +213,8 @@
 .content-playList-content-table-list::-webkit-scrollbar-track{
     background-color: transparent;
 }
-.content-playList-content-table-item{
+.content-playList-content-table-item-music{
+    width: 100%;
     margin-left:16px;
     max-height:60px;
     width:100%;
@@ -223,7 +224,117 @@
     border-bottom: 1px solid  var(--border-user-setting);
     border-radius:2px;
     padding: 4px 0;
-    cursor: pointer;
+}
+.content-playList-content-table-item-music:hover{
+    opacity:0.6;
+}
+.equalizer.is-active{
+    display: grid;
+    grid-gap: 4px;
+    grid-template-columns: repeat(5, 10px);
+    max-height: 50px;
+    transform: translateY(-62px);
+    background-color: rgba(0,0,0,0.2);
+}
+.equalizer {
+    display:none; }
+    .equalizer div {
+      background: -webkit-gradient(linear, left bottom, left top, from(green), color-stop(yellow), to(red));
+      background: linear-gradient(0deg, rgb(91, 115, 138), rgb(187, 98, 129), red);
+      height: 100%;
+      -webkit-animation: equalize 2s infinite;
+              animation: equalize 2s infinite; }
+      .equalizer div:nth-child(1) {
+        -webkit-animation-delay: -0.68333s;
+                animation-delay: -0.68333s; }
+      .equalizer div:nth-child(2) {
+        -webkit-animation-delay: -0.2s;
+                animation-delay: -0.2s; }
+      .equalizer div:nth-child(3) {
+        -webkit-animation-delay: -0.85s;
+                animation-delay: -0.85s; }
+      .equalizer div:nth-child(4) {
+        -webkit-animation-delay: -0.4s;
+                animation-delay: -0.4s; }
+      .equalizer div:nth-child(5) {
+        -webkit-animation-delay: -0.71667s;
+                animation-delay: -0.71667s; }
+  
+  @-webkit-keyframes equalize {
+    0%, 100% {
+      -webkit-clip-path: inset(65% 0 0 0);
+              clip-path: inset(65% 0 0 0); }
+    10% {
+      -webkit-clip-path: inset(67% 0 0 0);
+              clip-path: inset(67% 0 0 0); }
+    20% {
+      -webkit-clip-path: inset(40% 0 0 0);
+              clip-path: inset(40% 0 0 0); }
+    30% {
+      -webkit-clip-path: inset(75% 0 0 0);
+              clip-path: inset(75% 0 0 0); }
+    40% {
+      -webkit-clip-path: inset(41% 0 0 0);
+              clip-path: inset(41% 0 0 0); }
+    50% {
+      -webkit-clip-path: inset(20% 0 0 0);
+              clip-path: inset(20% 0 0 0); }
+    60% {
+      -webkit-clip-path: inset(22% 0 0 0);
+              clip-path: inset(22% 0 0 0); }
+    70% {
+      -webkit-clip-path: inset(11% 0 0 0);
+              clip-path: inset(11% 0 0 0); }
+    80% {
+      -webkit-clip-path: inset(57% 0 0 0);
+              clip-path: inset(57% 0 0 0); }
+    90% {
+      -webkit-clip-path: inset(28% 0 0 0);
+              clip-path: inset(28% 0 0 0); } }
+  
+  @keyframes equalize {
+    0%, 100% {
+      -webkit-clip-path: inset(65% 0 0 0);
+              clip-path: inset(65% 0 0 0); }
+    10% {
+      -webkit-clip-path: inset(67% 0 0 0);
+              clip-path: inset(67% 0 0 0); }
+    20% {
+      -webkit-clip-path: inset(40% 0 0 0);
+              clip-path: inset(40% 0 0 0); }
+    30% {
+      -webkit-clip-path: inset(75% 0 0 0);
+              clip-path: inset(75% 0 0 0); }
+    40% {
+      -webkit-clip-path: inset(41% 0 0 0);
+              clip-path: inset(41% 0 0 0); }
+    50% {
+      -webkit-clip-path: inset(20% 0 0 0);
+              clip-path: inset(20% 0 0 0); }
+    60% {
+      -webkit-clip-path: inset(22% 0 0 0);
+              clip-path: inset(22% 0 0 0); }
+    70% {
+      -webkit-clip-path: inset(11% 0 0 0);
+              clip-path: inset(11% 0 0 0); }
+    80% {
+      -webkit-clip-path: inset(57% 0 0 0);
+              clip-path: inset(57% 0 0 0); }
+    90% {
+      -webkit-clip-path: inset(28% 0 0 0);
+              clip-path: inset(28% 0 0 0); } }
+.content-playList-content-table-item{
+    /* width:100%;
+    margin-left:16px;
+    max-height:60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom: 1px solid  var(--border-user-setting);
+    border-radius:2px;
+    padding: 4px 0;
+    cursor: pointer; */
+    max-height: 50px;
 }
 
 .content-playList-content-table-item:hover{
